@@ -6,7 +6,11 @@ import logo from "../assets/quran.png";
 
 const Header = () => {
   return (
-    <Navbar bg="transport" expand="md">
+    <Navbar
+      bg="transport"
+      expand="md"
+      className="fixed-top px-4 bg-secondary shadow bg-gradient text-white"
+    >
       <Navbar.Brand>
         <Link to="/">
           <Image style={{ width: "50px" }} src={logo} alt="LOGO" />
@@ -15,16 +19,19 @@ const Header = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto gap-3">
-          <Link className="text-white text-decoration-none" to="/">
+          <Link className="text-white fs-5 text-decoration-none" to="/">
             الصفحة الرئيسية
           </Link>
-          <Link className="text-white text-decoration-none" to="/readers">
+          <Link className="text-white fs-5 text-decoration-none" to="/readers">
             القراء
           </Link>
-          <Link className="text-white text-decoration-none" to="/hadith">
+          <Link className="text-white fs-5 text-decoration-none" to="/hadith">
             أحاديث
           </Link>
-          <Link className="text-white text-decoration-none" to="/athan-time">
+          <Link
+            className="text-white fs-5 text-decoration-none"
+            to="/athan-time"
+          >
             مواعيد الأذان
           </Link>
         </Nav>
