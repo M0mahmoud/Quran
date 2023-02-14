@@ -1,13 +1,23 @@
-import React from "react";
-import { Container } from "react-bootstrap";
+import React, { useEffect } from "react";
+
 import SurahBoxs from "./SurahBoxs";
+import { Container } from "react-bootstrap";
+
+import { getAllQuran } from "../store/QuranSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 const Home = () => {
+  const { data } = useSelector((state) => state.quran);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getAllQuran());
+  }, []);
+
   return (
     <>
       <div className="p-5  hero-image">
         <svg
-        
           className="w-25"
           xmlns="http://www.w3.org/2000/svg"
           fill="#fff"
@@ -20,7 +30,7 @@ const Home = () => {
         </svg>
       </div>
       <Container>
-        <SurahBoxs />
+        <SurahBoxs surahData={data} />
       </Container>
     </>
   );

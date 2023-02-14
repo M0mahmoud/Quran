@@ -12,6 +12,9 @@ export const getAllQuran = createAsyncThunk(
     const { rejectWithValue } = thunkApi;
     try {
       const res = await fetch(`https://api.alquran.cloud/v1/surah`);
+      if (!res.ok) {
+        throw new Error(res.statusText);
+      }
       const data = await res.json();
       return data;
     } catch (error) {
@@ -29,11 +32,10 @@ export const getSurah = createAsyncThunk(
       const data = await res.json();
       return data;
     } catch (error) {
-      return rejectWithValue(error);
+      return rejectWithValue(error.message || error);
     }
   }
 );
-
 
 const quranSlice = createSlice({
   name: "quran",
@@ -41,10 +43,12 @@ const quranSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(getAllQuran.pending, (state) => {
       state.loading = true;
+      state.error = null;
     });
     builder.addCase(getAllQuran.fulfilled, (state, action) => {
       state.loading = false;
       state.data = action.payload.data;
+      state.error = null;
     });
     builder.addCase(getAllQuran.rejected, (state, action) => {
       state.loading = false;
@@ -53,10 +57,12 @@ const quranSlice = createSlice({
     //Get Surah
     builder.addCase(getSurah.pending, (state) => {
       state.loading = true;
+      state.error = null;
     });
     builder.addCase(getSurah.fulfilled, (state, action) => {
       state.loading = false;
       state.data = [action.payload.data];
+      state.error = null;
     });
     builder.addCase(getSurah.rejected, (state, action) => {
       state.loading = false;
