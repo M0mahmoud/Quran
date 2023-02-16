@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 const SurahBoxs = ({ surahData }) => {
   return (
     <section className="py-5">
-      <h1 className="border-bottom  rounded-4  pb-5  mb-5 text-center text-info ">
-        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
-      </h1>
       <Row>
         {surahData
           ? surahData.map((el) => (

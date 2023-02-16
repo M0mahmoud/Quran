@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="p-5  hero-image">
+      <div className="p-3 hero-image">
         <svg
           className="w-25"
           xmlns="http://www.w3.org/2000/svg"
@@ -30,6 +30,9 @@ const Home = () => {
         </svg>
       </div>
       <Container>
+        <h1 className="border-bottom  rounded-4  pb-5  mb-5 text-center text-info ">
+          بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        </h1>
         <SurahBoxs surahData={data} />
       </Container>
     </>

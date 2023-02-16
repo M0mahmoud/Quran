@@ -9,7 +9,7 @@ const Header = () => {
     <Navbar
       bg="transport"
       expand="md"
-      className="fixed-top px-4 bg-secondary shadow bg-gradient text-white"
+      className=" px-4 bg-secondary shadow bg-gradient text-white"
     >
       <Navbar.Brand>
         <Link to="/">
@@ -22,7 +22,7 @@ const Header = () => {
           <Link className="text-white fs-5 text-decoration-none" to="/">
             الصفحة الرئيسية
           </Link>
-          <Link className="text-white fs-5 text-decoration-none" to="/readers">
+          <Link className="text-white fs-5 text-decoration-none" to="/reciters">
             القراء
           </Link>
           <Link className="text-white fs-5 text-decoration-none" to="/hadith">

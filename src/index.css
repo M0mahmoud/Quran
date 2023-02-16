@@ -9,6 +9,17 @@ body {
 ul {
   list-style: none;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0dcaf0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 
 .hero-image {
   max-width: 100vw;
@@ -41,4 +52,76 @@ button:focus {
     var(--bs-info-rgb),
     calc(var(--bs-bg-opacity))
   ) !important;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+}
+.search label {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.search input {
+  width: 100%;
+  height: 65px;
+  background-color: transparent;
+  border: 1px solid #eee;
+  border-radius: 50px;
+  padding: 0 65px 0 20px;
+  font-size: 1.5rem;
+  color: #0dcaf0;
+}
+
+.search-icon {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  pointer-events: none;
+  right: 20px;
+  align-self: center;
+}
+
+::-webkit-media-controls-panel {
+  background-color: #3b4a58;
+  outline: none;
+  border: 1px solid #0dcaf0 !important;
+  border-radius: 30px;
+  box-shadow: none;
+}
+
+audio::-webkit-media-controls-play-button {
+  color: white;
+}
+:focus-visible {
+  outline: none;
+  border: none;
+  box-shadow: none;
+
+  border-radius: 30px;
+  border: 1px solid #0dcaf0 !important;
+}
+.play-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.play-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+.play-icon:hover {
+  background-color: #3b4a58;
+  cursor: pointer;
 }

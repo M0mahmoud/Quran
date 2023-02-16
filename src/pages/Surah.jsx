@@ -39,7 +39,7 @@ const Surah = () => {
 
   return (
     <LoadingComponent error={error} loading={loading}>
-      <div className="w-100 h-100 bg-dark bg-gradient text-white mt-5 py-5 px-4">
+      <div className="w-100 h-100 bg-dark bg-gradient text-white py-3 px-4">
         <h2 className="mb-4">{name}</h2>
         <div className="d-flex gap-3">
           <h3 className="w-100 mb-2 text-info">
