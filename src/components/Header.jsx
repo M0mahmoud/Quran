@@ -25,7 +25,7 @@ const Header = () => {
           <Link className="text-white fs-5 text-decoration-none" to="/reciters">
             القراء
           </Link>
-          <Link className="text-white fs-5 text-decoration-none" to="/hadith">
+          <Link className="text-white fs-5 text-decoration-none" to="/hadithList">
             أحاديث
           </Link>
           <Link
