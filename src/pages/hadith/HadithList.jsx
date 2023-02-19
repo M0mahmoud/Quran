@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import LoadingComponent from "../components/LoadingComponent";
-import { getHadithLists } from "../store/QuranSlice";
+import LoadingComponent from "../../components/LoadingComponent";
+import { getHadithLists } from "../../store/QuranSlice";
 
 const HadithList = () => {
   const dispatch = useDispatch();

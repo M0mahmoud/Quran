@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-import SurahBoxs from "./SurahBoxs";
+import SurahBoxs from "./quran/SurahBoxs";
 import { Container } from "react-bootstrap";
 
 import { getAllQuran } from "../store/QuranSlice";

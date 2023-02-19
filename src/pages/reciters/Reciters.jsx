@@ -1,11 +1,11 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { getAllReciters } from "../store/QuranSlice";
+import { getAllReciters } from "../../store/QuranSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 import { Col, Container, Row } from "react-bootstrap";
-import LoadingComponent from "../components/LoadingComponent";
+import LoadingComponent from "../../components/LoadingComponent";
 
 const Reciters = () => {
   const dispatch = useDispatch();

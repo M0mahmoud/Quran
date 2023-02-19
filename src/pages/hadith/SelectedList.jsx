@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
-import LoadingComponent from "../components/LoadingComponent";
-import { getSeletedLists } from "../store/QuranSlice";
+import LoadingComponent from "../../components/LoadingComponent";
+import { getSeletedLists } from "../../store/QuranSlice";
 
 const SelectedList = () => {
   const { listId } = useParams();

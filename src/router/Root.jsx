@@ -2,12 +2,12 @@ import { createBrowserRouter } from "react-router-dom";
 
 import App from "../App";
 import Home from "../pages/Home";
-import Surah from "../pages/Surah";
-import Readers from "../pages/Reciters";
-import ReadHadith from "../pages/ReadHadith";
-import HadithList from "../pages/HadithList";
-import SelectedList from "../pages/SelectedList";
-import RecitersSurah from "../pages/RecitersSurah";
+import Surah from "../pages/quran/Surah";
+import Readers from "../pages/reciters/Reciters";
+import ReadHadith from "../pages/hadith/ReadHadith";
+import HadithList from "../pages/hadith/HadithList";
+import SelectedList from "../pages/hadith/SelectedList";
+import RecitersSurah from "../pages/reciters/RecitersSurah";
 
 export const router = createBrowserRouter([
   {
@@ -48,5 +48,3 @@ export const router = createBrowserRouter([
     ],
   },
 ]);
-
-// { path: "read-hadith", element: < /> },

@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
-import LoadingComponent from "../components/LoadingComponent";
-import { readHadith } from "../store/QuranSlice";
+import LoadingComponent from "../../components/LoadingComponent";
+import { readHadith } from "../../store/QuranSlice";
 
 const ReadHadith = () => {
   const { hadithId } = useParams();

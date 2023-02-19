@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { Container } from "react-bootstrap";
-import LoadingComponent from "../components/LoadingComponent";
+import LoadingComponent from "../../components/LoadingComponent";
 
-import { getAudioUrl } from "../utils/helper";
+import { getAudioUrl } from "../../utils/helper";
 import { useDispatch, useSelector } from "react-redux";
-import { getAllQuran, getDataReciter } from "../store/QuranSlice";
+import { getAllQuran, getDataReciter } from "../../store/QuranSlice";
 
 const RecitersSurah = () => {
   const { id } = useParams();

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 
 import { Button, ButtonGroup } from "react-bootstrap";
-import LoadingComponent from "../components/LoadingComponent";
+import LoadingComponent from "../../components/LoadingComponent";
 
-import { scrollToTop } from "../utils/helper";
+import { scrollToTop } from "../../utils/helper";
 import { useParams, useNavigate } from "react-router-dom";
 
-import { getSurah } from "../store/QuranSlice";
+import { getSurah } from "../../store/QuranSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 const Surah = () => {
