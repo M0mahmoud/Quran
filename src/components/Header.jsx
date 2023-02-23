@@ -25,15 +25,18 @@ const Header = () => {
           <Link className="text-white fs-5 text-decoration-none" to="/reciters">
             القراء
           </Link>
-          <Link className="text-white fs-5 text-decoration-none" to="/hadithList">
+          <Link
+            className="text-white fs-5 text-decoration-none"
+            to="/hadithList"
+          >
             أحاديث
           </Link>
-          <Link
+          {/* <Link
             className="text-white fs-5 text-decoration-none"
             to="/athan-time"
           >
             مواعيد الأذان
-          </Link>
+          </Link> */}
         </Nav>
       </Navbar.Collapse>
     </Navbar>

@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import Surah from "../pages/quran/Surah";
+import AthanTime from "../pages/athan/AthanTime";
 import Readers from "../pages/reciters/Reciters";
 import ReadHadith from "../pages/hadith/ReadHadith";
 import HadithList from "../pages/hadith/HadithList";
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "hadithList/:listId/:hadithId",
         element: <ReadHadith />,
+      },
+      {
+        path: "athan-time",
+        element: <AthanTime />,
       },
     ],
   },
